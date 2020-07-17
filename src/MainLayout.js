@@ -1,13 +1,12 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
+import { Grid, Card } from '@material-ui/core';
+import CardContainer from './CardContainer'
 
 export default function MainLayout() {
     return (
-        <Grid container spacing={2} justify="center">
-            <Grid item>one</Grid>
-            <Grid item>two</Grid>
-            <Grid item>three</Grid>
-          
+        <Grid container spacing={4} justify="center">
+            <CardContainer></CardContainer>
+            
         </Grid>
     )
 }
