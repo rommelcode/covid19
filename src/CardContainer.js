@@ -1,21 +1,25 @@
 import React from "react";
-import { Grid, Card, CardContent, Typography } from "@material-ui/core";
+import {
+  Grid,
+  Card,
+  CardContent,
+  Typography,
+  FormRow,
+} from "@material-ui/core";
+import styles from "./CardContainer.css";
+import CardComponent from "./CardComponent";
 
 export default function CardContainer() {
   return (
-    <Grid container justify="center" spacing={3}>
-      <Grid item lg={3}>
-        <CardContent>
-          <Typography>Infected</Typography>
-        </CardContent>
-
-        <CardContent>
-          <Typography>Deaths</Typography>
-        </CardContent>
-
-        <CardContent>
-          <Typography>Recovered</Typography>
-        </CardContent>
+    <Grid container spacing={1}>
+      <Grid container item xs={12} spacing={3}>
+        <CardComponent></CardComponent>
+      </Grid>
+      <Grid container item xs={12} spacing={3}>
+        <CardComponent></CardComponent>
+      </Grid>
+      <Grid container item xs={12} spacing={3}>
+        <CardComponent></CardComponent>
       </Grid>
     </Grid>
   );
