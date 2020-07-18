@@ -6,16 +6,20 @@ import {
   Typography,
   FormRow,
 } from "@material-ui/core";
-import styles from "./CardContainer.css";
+import { withStyles } from "@material-ui/core/styles";
 import CardComponent from "./CardComponent";
 
-export default function CardContainer() {
-  return (
-    <Grid container spacing={1}>
-        <CardComponent></CardComponent>
-        <CardComponent></CardComponent>
-        <CardComponent></CardComponent>
-     
-    </Grid>
-  );
-}
+const styles = () => ({
+  Container: {
+    "display": "flex",
+    "align-items": "center",
+    "flex-direction": "column",
+  },
+});
+
+export default withStyles(styles)(({ classes }) => (
+  <Grid className={classes.Container} container>
+    <CardComponent></CardComponent>
+    <CardComponent></CardComponent>
+  </Grid>
+));
