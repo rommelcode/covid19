@@ -5,7 +5,7 @@ import CardContainer from "./CardContainer";
 
 export default function MainLayout() {
   return (
-    <Grid container direction="row" justify="flex-end">
+    <Grid container direction="row" justify="center" spacing={5}>
       <Grid item >
         <CardContainer></CardContainer>
       </Grid>

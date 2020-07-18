@@ -12,15 +12,8 @@ import CardComponent from "./CardComponent";
 export default function CardContainer() {
   return (
     <Grid container spacing={1}>
-      <Grid container item xs={12} spacing={3}>
         <CardComponent></CardComponent>
-      </Grid>
-      {/* <Grid container item xs={12} spacing={3}>
-        <CardComponent></CardComponent>
-      </Grid>
-      <Grid container item xs={12} spacing={3}>
-        <CardComponent></CardComponent>
-      </Grid> */}
+     
     </Grid>
   );
 }
