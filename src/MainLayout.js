@@ -5,15 +5,14 @@ import CardContainer from "./CardContainer";
 
 export default function MainLayout() {
   return (
-    <Grid container direction="column">
-      <Grid item sm={4}>
-       one
+    <Grid container direction="row" justify="flex-end">
+      <Grid item >
         <CardContainer></CardContainer>
       </Grid>
-      <Grid item sm={4}>
+      <Grid item >
         <CardContainer></CardContainer>
       </Grid>
-      <Grid item sm={4}>
+      <Grid item >
         <CardContainer></CardContainer>
       </Grid>
     </Grid>

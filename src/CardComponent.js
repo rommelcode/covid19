@@ -32,18 +32,16 @@ export default function CardComponent() {
     <CardContent>
 
       <Typography className={classes.title} color="textSecondary" gutterBottom>
-        Word of the Day
+       Infected
       </Typography>
       <Typography variant="h5" component="h2">
-        be{bull}nev{bull}o{bull}lent
+        13,000,000
       </Typography>
       <Typography className={classes.pos} color="textSecondary">
-        adjective
+        Sat Jul 18 2020
       </Typography>
       <Typography variant="body2" component="p">
-        well meaning and kindly.
-        <br />
-        {'"a benevolent smile"'}
+       Number of cases of covid-19
       </Typography>
 
     </CardContent>
