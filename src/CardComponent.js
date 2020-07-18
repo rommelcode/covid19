@@ -5,36 +5,41 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { withStyles} from "@material-ui/core/styles";
 
-import styles from './Card.css';
-
-import cx from 'classnames';
-
-
-const useStyles = makeStyles({
-  root: {
-    "border-style": "dotted"
-  },
-
-  bullet: {
-    display: "inline-block",
-    margin: "0 22px",
-    transform: "scale(0.8)",
-  },
-  title: {
-    fontSize: 14,
-  },
-  pos: {
-    marginBottom: 12,
-  },
-
+const styles = () => ({
+  Paper: {
+    padding: 2,
+    "font-family": "Impact, Charcoal, sans-serif",
+    "font-size": 22,
+    marginTop: 15,
+    height: 200,
+    overflowY: "auto",
+    "border-bottom": "solid red 2px"
+  }
 });
+// const useStyles = makeStyles({
+//   root: {
+//     "border-style": "dotted"
+//   },
 
-export default function CardComponent() {
-  const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
-  return (
-    <Card className={classes.root} variant="outlined" >
+//   bullet: {
+//     display: "inline-block",
+//     margin: "0 22px",
+//     transform: "scale(0.8)",
+//   },
+//   title: {
+//     fontSize: 14,
+//   },
+//   pos: {
+//     marginBottom: 12,
+//   },
+
+// });
+
+
+export default withStyles(styles)(({ classes }) => (
+    <Card className={classes.Paper} variant="outlined" >
       <CardContent>
         <Typography
           className={classes.title}
@@ -56,5 +61,8 @@ export default function CardComponent() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-  );
-}
+  )
+);
+
+
+//export default function CardComponent() {

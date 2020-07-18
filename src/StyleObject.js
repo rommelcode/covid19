@@ -4,15 +4,15 @@ import React, { Fragment } from "react";
 import { withStyles} from "@material-ui/core/styles";
 
 
-const styles = theme => ({
+const styles = () => ({
   Paper: {
     padding: 2,
     "font-family": "Impact, Charcoal, sans-serif",
     "font-size": 22,
     marginTop: 15,
-    height: 400,
+    height: 200,
     overflowY: "auto",
-    "border-bottom": "solid red 12px"
+    "border-bottom": "solid red 2px"
   }
 });
 

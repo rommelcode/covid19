@@ -13,6 +13,8 @@ export default function CardContainer() {
   return (
     <Grid container spacing={1}>
         <CardComponent></CardComponent>
+        <CardComponent></CardComponent>
+        <CardComponent></CardComponent>
      
     </Grid>
   );

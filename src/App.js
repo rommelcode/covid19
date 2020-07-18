@@ -9,8 +9,8 @@ import StyleObject from './StyleObject';
 function App() {
   return (
 
-    // <CardContainer></CardContainer>
-     <StyleObject></StyleObject>
+    <CardContainer></CardContainer>
+    //  <StyleObject></StyleObject>
   );
 }
 
