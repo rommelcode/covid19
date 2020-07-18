@@ -15,12 +15,12 @@ export default function CardContainer() {
       <Grid container item xs={12} spacing={3}>
         <CardComponent></CardComponent>
       </Grid>
-      <Grid container item xs={12} spacing={3}>
+      {/* <Grid container item xs={12} spacing={3}>
         <CardComponent></CardComponent>
       </Grid>
       <Grid container item xs={12} spacing={3}>
         <CardComponent></CardComponent>
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 }
