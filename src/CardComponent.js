@@ -7,17 +7,17 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { withStyles} from "@material-ui/core/styles";
 
-// const styles = () => ({
-//   Paper: {
-//     padding: 12,
-//     "font-family": "Impact, Charcoal, sans-serif",
-//     "font-size": 22,
-//     marginTop: 15,
-//     height: 200,
-//     overflowY: "auto",
-//     "border-bottom": "solid green 2px"
-//   }
-// });
+const styles = () => ({
+  Paper: {
+    padding: 12,
+    "font-family": "Impact, Charcoal, sans-serif",
+    "font-size": 22,
+    marginTop: 15,
+    height: 200,
+    overflowY: "auto",
+    "border-bottom": "solid green 2px"
+  }
+});
 // const useStyles = makeStyles({
 //   root: {
 //     "border-style": "dotted"
@@ -38,8 +38,8 @@ import { withStyles} from "@material-ui/core/styles";
 // });
 
 
-export default withStyles()(({ classes }) => (
-    <Card variant="outlined" >
+export default withStyles(styles)(({ classes }) => (
+    <Card variant="outlined" className={classes.Paper}>
       <CardContent>
         <Typography
           className={classes.title}
