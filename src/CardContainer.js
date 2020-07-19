@@ -37,10 +37,16 @@ export default withStyles(styles)(({ classes }) => (
     container
     direction="row"
     justify="center"
-  
+    spacing={2}
   >
-    <CardComponent></CardComponent>
-    <CardComponent></CardComponent>
-    <CardComponent></CardComponent>
+    <Grid item>
+      <CardComponent></CardComponent>
+    </Grid>
+    <Grid item>
+      <CardComponent></CardComponent>
+    </Grid>
+    <Grid item>
+      <CardComponent></CardComponent>
+    </Grid>
   </Grid>
 ));
