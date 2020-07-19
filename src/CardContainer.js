@@ -21,9 +21,8 @@ const styles = () => ({
   },
   Container: {
     display: "flex",
-    justify: "center",
-    "flex-direction": "row",
-
+    justify: "flex-end",
+    "direction": "column",
     margin: 10,
   },
 });
@@ -39,7 +38,7 @@ const styles = () => ({
 // });
 
 export default withStyles(styles)(({ classes }) => (
-  <Grid className={classes.Container}>
+  <Grid className={classes.Paper} container direction="column" justify="flex-end" spacing={12}>
     <div>one</div>
     <div>two</div>
   </Grid>
