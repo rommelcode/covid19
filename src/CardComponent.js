@@ -9,13 +9,13 @@ import { withStyles} from "@material-ui/core/styles";
 
 const styles = () => ({
   Paper: {
-    padding: 2,
+    padding: 12,
     "font-family": "Impact, Charcoal, sans-serif",
     "font-size": 22,
     marginTop: 15,
     height: 200,
     overflowY: "auto",
-    "border-bottom": "solid red 2px"
+    "border-bottom": "solid green 2px"
   }
 });
 // const useStyles = makeStyles({

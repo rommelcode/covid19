@@ -10,16 +10,37 @@ import { withStyles } from "@material-ui/core/styles";
 import CardComponent from "./CardComponent";
 
 const styles = () => ({
+  Paper: {
+    padding: 12,
+    "font-family": "Impact, Charcoal, sans-serif",
+    "font-size": 22,
+    marginTop: 15,
+    height: 200,
+    overflowY: "auto",
+    "border-bottom": "solid green 2px",
+  },
   Container: {
-    "display": "flex",
-    "align-items": "center",
-    "flex-direction": "column",
+    display: "flex",
+    justify: "center",
+    "flex-direction": "row",
+
+    margin: 10,
   },
 });
 
+// const styles = () => ({
+//   Container: {
+//     display: "flex",
+//     justify: "center",
+//     "flex-direction": "row",
+
+//     margin:10
+//   },
+// });
+
 export default withStyles(styles)(({ classes }) => (
-  <Grid className={classes.Container} container>
-    <CardComponent></CardComponent>
-    <CardComponent></CardComponent>
+  <Grid className={classes.Container}>
+    <div>one</div>
+    <div>two</div>
   </Grid>
 ));
